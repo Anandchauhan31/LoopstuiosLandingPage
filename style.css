@@ -1,0 +1,633 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 55%);
+    --VeryDarkGray: hsl(0, 0%, 41%);
+
+    --headingFont: 'Josefin Sans', sans-serif;
+    --bodyFont: 'Alata', sans-serif;
+}
+
+body {
+    font-size: 15px;
+}
+
+.light-headline {
+    font-size: 70px;
+    color: var(--White);
+    font-family: var(--headingFont);
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+.dark-subtitle {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.dark-subtitle2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+
+.body-text {
+    line-height: 1.8em;
+}
+
+.light-body-text {
+    line-height: 1.8em;
+    color: var(--DarkGray);
+    font-weight: 900;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner {
+    background-image: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+
+}
+
+.navigation {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    position: relative;
+    padding-bottom: 7px;
+
+}
+
+.navigation a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: aliceblue;
+    transition: 250ms ease-in-out;
+}
+
+.navigation a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+
+
+
+.navigation li a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 25px;
+
+}
+
+.hero-section {
+    padding: 140px 0px;
+
+}
+
+.hero-text {
+    border: 2px solid var(--White);
+    padding: 30px 35px 20px 30px;
+    width: 60%;
+}
+
+.image-text-col {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+
+.image-col {
+    background-image: url(images/desktop/image-interactive.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 80%;
+
+}
+
+.text-col {
+    background-color: var(--White);
+    width: 50%;
+    height: fit-content;
+    margin-left: -130px;
+    margin-top: auto;
+    padding: 80px 0px 0px 80px;
+}
+
+.pods-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button2 {
+    padding: 12px 25px;
+    background-color: var(--Black);
+    color: var(--White);
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 0px;
+    font-weight: 700;
+    
+}
+
+.button2:hover {
+    
+    background-color: var(--White);
+    color: var(--Black);
+    border: 1px solid black;
+    font-weight: 700;
+
+}
+
+.pods-text {
+    color: var(--White);
+    text-transform: uppercase;
+    font-size: 30px;
+    position: absolute;
+    bottom: 40px;
+    right: 35px;
+    left: 40px;
+
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.pods-section {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pod {
+    width: 22%;
+    height: 450px;
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+
+.overlay {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease-in;
+}
+
+.simple-overlay {
+    opacity: 1;
+    background: rgba(5, 5, 5, 0.204);
+}
+
+.pod:hover .simple-overlay {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(33, 2, 96, 0.463);
+}
+
+
+
+
+.pod1 {
+    background-image: url(images/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+.pod2 {
+    background-image: url(images/desktop/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.pod3 {
+    background-image: url(images/desktop/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.pod4 {
+    background-image: url(images/desktop/image-grid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pod5 {
+    background-image: url(images/desktop/image-from-above.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pod6 {
+    background-image: url(images/desktop/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pod7 {
+    background-image: url(images/desktop/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pod8 {
+    background-image: url(images/desktop/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--Black);
+    padding: 40px 0px 35px;
+    margin-top: 100px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social {
+    text-align: right;
+}
+
+.social img {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-navigation {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navigation .footer-navigation li a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 25px;
+    margin-left: 0px;
+}
+
+.footer-wrapper li a {
+    margin-left: 0px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+
+/* responsive - tab  */
+
+@media screen and (max-width: 769px) {
+
+    .light-headline {
+        font-size: 40px;
+    }
+
+    .banner {
+        height: 50vh;
+    }
+
+    .container {
+        width: 86%;
+
+    }
+
+    .image-col {
+        width: 90%;
+    }
+
+    .text-col {
+        padding: 40px 0px 0px 40px;
+        margin-left: -260px;
+        width: 60%;
+    }
+
+    .image-text-col {
+        padding: 60px 0px;
+    }
+
+    .dark-subtitle {
+        font-size: 32px;
+    }
+
+    .pod {
+        width: 47%;
+    }
+
+    .pods-text {
+        font-size: 35px;
+        bottom: 40px;
+        right: 48px;
+        left: 48px;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+
+}
+
+
+/* responsive - mobile*/
+
+
+@media screen and (max-width: 376px) {
+
+    label {
+        display: block;
+    }
+
+    label i {
+        font-size: 30px !important;
+        color: var(--White);
+
+    }
+
+    label i.fa-remove {
+        transition: all 0.5s ease-in;
+        position: absolute;
+
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        right: -500px;
+        background-color: black;
+        transition: all 0.5s ease-in-out;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    #mobile-nav:checked~label i.fa-bars {
+        display: none !important;
+
+    }
+
+    #mobile-nav:checked~.navigation {
+        right: 0px;
+        transition: all 0.5s ease-in-out;
+        padding: 40px;
+
+
+    }
+
+    #mobile-nav:checked~label i.fa-remove {
+        display: block;
+        font-size: 25px;
+        position: fixed;
+        z-index: 2;
+        right: 25px;
+        top: 25px;
+
+    }
+
+    #mobile-nav:checked~label {
+        z-index: 99;
+        display: block;
+
+    }
+
+    #mobile-nav:checked~label~nav {
+        right: 0 !important;
+        top: 0px;
+    }
+
+
+    .navigation li {
+        margin-top: 30px;
+    }
+
+
+
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+
+        padding: 25px;
+    }
+
+    .hero-section {
+        padding: 115px 25px;
+    }
+
+    .banner {
+
+        background-image: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 30%)), url(images/mobile/image-hero.jpg);
+        height: 650px;
+        background-position: center;
+    }
+
+    .hero-text {
+
+        width: 100%;
+    }
+
+    .light-headline {
+        font-size: 38px;
+        text-align: left;
+    }
+
+    .image-text-col {
+
+        padding: 25px;
+        flex-direction: column;
+    }
+
+    .image-col {
+        height: 220px;
+        width: 100%;
+    }
+
+    .text-col {
+
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+    .dark-subtitle {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .dark-subtitle2{
+        font-size: 30px;
+    }
+
+    .pod {
+        width: 100%;
+        height: 136px;
+        margin-top: 20px;
+    }
+
+    .pods-text{
+        font-size: 26px;
+        bottom: 20px;
+        right: 0;
+        left: 20px;
+        text-align: left;
+    }
+
+    .pod1 {
+        background-image: url(images/mobile/image-deep-earth.jpg);
+    }
+
+    .pod2 {
+        background-image: url(images/mobile/image-night-arcade.jpg);
+    }
+
+    .pod3 {
+        background-image: url(images/mobile/image-soccer-team.jpg);
+    }
+
+    .pod4 {
+        background-image: url(images/mobile/image-grid.jpg);
+    }
+
+    .pod5 {
+        background-image: url(images/mobile/image-from-above.jpg);
+    }
+
+    .pod6 {
+        background-image: url(images/mobile/image-pocket-borealis.jpg);
+    }
+
+    .pod7 {
+        background-image: url(images/mobile/image-curiosity.jpg);
+    }
+
+    .pod8 {
+        background-image: url(images/mobile/image-fisheye.jpg);
+    }
+
+    .pods-section {
+        flex-direction: column;
+        padding: 0px 25px;
+    }
+
+    .pods-head {
+
+        flex-direction: column;
+    }
+
+    .button2 {
+        margin-top: 20px;
+    }
+
+
+    footer {
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    .footer-wrapper {
+
+        flex-direction: column;
+    }
+
+    .social {
+        text-align: center;
+        margin-top: 22px;
+    }
+
+    .footer-navigation {
+
+        flex-direction: column;
+    }
+
+    .footer-navigation li a {
+
+        margin-left: 0px;
+    }
+
+    .footer-navigation li {
+        margin-bottom: 20px;
+    }
+
+}
